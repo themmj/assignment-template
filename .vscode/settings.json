@@ -1,3 +1,4 @@
 {
-    "debug.onTaskErrors": "abort"
+    "debug.onTaskErrors": "abort",
+    "extensions.ignoreRecommendations": true
 }
