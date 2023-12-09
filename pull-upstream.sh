@@ -15,3 +15,4 @@ if [ $? -ne 0 ]; then
 else
     echo "you're now on the most recent version"
 fi
+exit 0

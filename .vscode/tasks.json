@@ -2,7 +2,7 @@
     "tasks": [
         {
             "type": "shell",
-            "label": "Build",
+            "label": "build",
             "command": "/usr/bin/make",
             "options": {
                 "cwd": "${workspaceFolder}"
@@ -11,6 +11,19 @@
                 "kind": "build",
                 "isDefault": true
             },
+        },
+        {
+            "type": "shell",
+            "label": "update",
+            "command": "./pull-upstream.sh",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+        },
+        {
+            "label": "update+build",
+            "dependsOrder": "sequence",
+            "dependsOn": ["update", "build"]
         }
     ],
     "version": "2.0.0"
