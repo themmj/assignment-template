@@ -13,6 +13,6 @@ if [ $? -ne 0 ]; then
         echo "if you know your way around with git you can attempt to rebase yourself from upstream/$upstream_branch" &&
         git rebase --abort
 else
-    echo "you're now on the most recent version"
+    echo "you're on the most recent version"
 fi
 exit 0
